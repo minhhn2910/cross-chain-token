@@ -1,4 +1,4 @@
-# Cross-Chain Voting
+# Cross-Chain Token (Remote Controlled)
 Test POC cross-chain token runs on N blockchains. There is 1 host blockchain hosting the token. Other account on other blockchains will remote control the host contract.
 
 ## Features:
@@ -72,4 +72,4 @@ Balance of sender on chain  1  is  100n
 Balance of sender on chain  2  is  200n
 
 ```
-
+Sample run can be viewed from [Github Action](https://github.com/minhhn2910/cross-chain-token/actions)
