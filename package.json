@@ -1,0 +1,20 @@
+{
+  "name": "cross-chain-token",
+  "version": "1.0.0",
+  "description": "Testing crosschain remote controlled ERC20 Token ",
+  "main": "test.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/minhhn2910/cross-chain-token"
+  },
+  "author": "minhhn2910@github",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "web3": "^4.1.1"
+  }
+}
