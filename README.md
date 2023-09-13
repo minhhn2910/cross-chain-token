@@ -1,5 +1,5 @@
 # Cross-Chain Token (Remote Controlled)
-Test POC cross-chain token runs on N blockchains. There is 1 host blockchain hosting the token. Other account on other blockchains will remote control the host contract.
+Test POC cross-chain token runs on N blockchains. There is 1 host blockchain hosting the token. Other accounts on other blockchains will control the host contract remotely.
 
 ## Features:
 The host contract on the host blockchain holds the balance states, while the other `N-1` contracts on `N-1` blockchains remote controlled it by message passing.
@@ -7,16 +7,16 @@ Each sender will have a unique id accross blockchain by hashing the `chain_id` c
 
 Each blockchain is a single `ganache-cli` process running on a different port. All have the same account with enough ETH for gas.
 
-This repo simulates the behavior of the simplest form of remoted controlled cross-chain token that only serve minting and transfer remotely to anyone. Full token functionality or other more complex schemes are not implemented. Because there is no security mechanism in place, this setup should be used for demonstration purposes only.
+This repo simulates the behavior of the simplest form of remoted controlled cross-chain token that only serves minting and transfer remotely to anyone. Full token functionality or other more complex schemes are not implemented. Because there is no security mechanism in place, this setup should be used for demonstration purposes only.
 
 ### Code files
 
 * `contracts/CrossERC20.sol` : the remote controlled Token with a unified logic that applied to all of the participating blockchains
 * `bridge.js`: the simple notary bridge service listening to relevant events on all chains
-* `test.js` : the test scenario deploy, init remote token contracts, minting, and transferring.
+* `test.js` : the test scenario to deploy, init remote token contracts, minting, and transferring.
 
 ### Run Test:
-1. Clone this project and make sure `node` is installed:
+1. Clone this project and make sure `node v16` is installed:
 ```
 git clone https://github.com/minhhn2910/cross-chain-voting.git
 ```
